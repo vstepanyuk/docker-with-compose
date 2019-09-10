@@ -1,4 +1,4 @@
 FROM docker:latest
 
-RUN apk --update add py-pip curl && \
+RUN apk add --no-cache py-pip python-dev libffi-dev openssl-dev gcc curl libc-dev make && \
     pip install docker-compose
