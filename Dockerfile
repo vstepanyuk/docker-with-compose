@@ -1,4 +1,4 @@
 FROM docker:latest
 
-RUN apk --update add py-pip && \
+RUN apk --update add py-pip curl && \
     pip install docker-compose
